@@ -1,7 +1,7 @@
 # react app
 
 - [Commit Message Convention](#Commit-Message-Convention)
-- [GitBash Command](GitBash-Command)
+- [GitBash Command](#GitBash-Command)
 
 # Commit Message Convention
 ## Commit Message를 위한 규칙
@@ -19,15 +19,37 @@
 
 
 ```
-[type] : subject
+[type] : Contents
 
 body
 
 footer
 ```
 
-## 2. Commit Type
-- 
+## 2. Type
+- feat: 새로운 기능 추가 (코드 추가)
+- fix: 버그 수정 (에러 수정)
+- refactor: 코드 리팩토링 (코드 개선)
+- docs: 문서 수정
+- style: css, sass 추가 및 수정
+- chore: 빌드 업무 수정, 모듈 수정, 패키지 매니저 수정
+
+## 3. Contents
+- 과거시제를 사용하지 않고 명령어로 작성합니다.
+    - Fix
+    - Add
+    - Update
+    - Delete
+
+## 4. Body
+- 선택사항 입니다. 
+- 부연설명이 필요하거나 커밋 이유를 설명할 경우 작성합니다.
+
+## 5. Footer
+- 선택사항 입니다.
+- issue tracker id를 작성할 때 사용합니다.
+
+
 
 # GitBash Command
 - commit 상태 확인: `$git status`
@@ -47,3 +69,6 @@ footer
 ---
 아래 사이트를 참조해 작성된 글입니다.
 - https://meetup.toast.com/posts/106
+- https://doublesprogramming.tistory.com/256
+- https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html
+- https://byseop.netlify.com/react-todolist01/
