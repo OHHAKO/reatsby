@@ -1,19 +1,46 @@
 # react app
 
-# Commit message Convention
+- [Commit Message Convention](#Commit-Message-Convention)
+- [GitBash Command](GitBash-Command)
 
-## Rules for good Commit Message
-1. 
+# Commit Message Convention
+## Commit Message를 위한 규칙
+1. 제목과 본문을 한 줄 띄워 분리하기 
+2. 모두 영어로 작성하기 
+3. 제목은 영문 기준 50자 이내로
+4. 제목 첫글자를 대문자로
+5. 제목 끝에 `.` 쓰지않기
+6. 제목은 `명령조` 로 작성
+7. 본문은 `어떻게`보다 `무엇을`, `왜`에 맞춰 작성하기
 
 ## 1. Commit Message Structure
+- 커밋 메세지는 제목/본문/꼬리말로 구성됩니다.
+- 타이틀은 필수로 작성하되 바디와 푸터는 옵션입니다.
+
+
 ```
-[type] 
+[type] : subject
+
+body
+
+footer
 ```
 
 ## 2. Commit Type
 - 
 
+# GitBash Command
+- commit 상태 확인: `$git status`
+- commit 목록 확인: `$ git log`
+- commit message 변경: `$ git commit --amend`
+- commit 취소 후 staged: `$ git reset --soft HEAD^`
+- commit 취소 후 unstaged
+    - 첫번째 방법: `$ git reset --mixed HEAD^`
+    - 두번째 방법: `$ git reset HEAD^`
+<br>
 
+- 작업 staging: `$ git add *`
+- 선택한 파일 unstaging: `$ git reset HEAD filename`
 
 
 
