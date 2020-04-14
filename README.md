@@ -72,3 +72,5 @@ footer
 - https://doublesprogramming.tistory.com/256
 - https://gmlwjd9405.github.io/2018/05/25/git-add-cancle.html
 - https://byseop.netlify.com/react-todolist01/
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+- [zeke/semantic-pull-request](https://github.com/zeke/semantic-pull-requests)
