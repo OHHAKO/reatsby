@@ -35,7 +35,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>
-          <button className="btn btn-success">Hello world</button>
+          <div className="btn btn-success">Hello world</div>
+          <div className="btn btn-info">Hola gatsbt</div>
           </main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
