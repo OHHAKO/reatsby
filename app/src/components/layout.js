@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import 'bootstrap/dist/css/bootstrap.css'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,7 +34,10 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>Hello world</main>
+        <main>
+          <div className="btn btn-success">Hello world</div>
+          <div className="btn btn-info">Hola gatsbt</div>
+          </main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
