@@ -2,6 +2,7 @@
   "parser": "babel-eslint",
   "rules": {
     "no-commonjs": 0,
+    "no-unused-vars": 0,
     "strict": 0,
     "react/display-name": 0
   },
