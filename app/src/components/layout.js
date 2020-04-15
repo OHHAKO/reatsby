@@ -6,12 +6,12 @@
  */
 
 import React from "react"
-// import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import 'bootstrap/dist/css/bootstrap.css'
+import "bootstrap/dist/css/bootstrap.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         <main>
           <div className="btn btn-success">Hello world</div>
           <div className="btn btn-info">Hola gatsbt</div>
-          </main>
+        </main>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
@@ -48,8 +48,8 @@ const Layout = ({ children }) => {
   )
 }
 
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 export default Layout
