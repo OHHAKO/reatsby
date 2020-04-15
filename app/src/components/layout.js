@@ -1,17 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Alert from "react-bootstrap/Alert"
 
 import Header from "./header"
-import "./layout.css"
-import "bootstrap/dist/css/bootstrap.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,14 +27,15 @@ const Layout = ({ children }) => {
         }}
       >
         <main>
-          <div className="btn btn-success">Hello world</div>
-          <div className="btn btn-info">Hola gatsbt</div>
+          <Alert variant="primary">Hello World</Alert>
+          <Alert variant="success">Hola gatsbt</Alert>
+          {children}
         </main>
-        {/* <footer>
+        <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
+        </footer>
       </div>
     </>
   )
